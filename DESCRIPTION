@@ -1,0 +1,19 @@
+Package: dashboard.utils
+Type: Package
+Title: Useful Extensions to Shiny Dashboards
+Version: 0.1.0
+Author: person('Jakub', 'Niedzwiecki', 'j.niedzwiecki@gmail.com',
+    role = c('aut', 'cre'))
+Maintainer: The package maintainer <j.niedzwiecki@gmail.com>
+Description: Example shiny app with inclusion of hand-made improvements.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  shiny,
+  shinydashboard,
+  shinyjs,
+  lubridate,
+  dplyr
+Suggests: testthat
+RoxygenNote: 6.0.1
