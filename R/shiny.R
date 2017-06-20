@@ -2,7 +2,7 @@ shiny_ui <- function() {
   sidebar <- dashboardSidebar(sidebarMenu(id = 'tabs',
                                           menuItem(text = 'Dashboard', tabName = 'dashboard', icon = icon('dashboard')
                                           ),
-                                          daterangeUI('daterange')
+                                          div(id = 'tohide',daterangeUI('daterange'))
   )
   )
 
@@ -24,6 +24,8 @@ shiny_ui <- function() {
 
 
 shiny_server <- function(input, output, session) {
+
+  callModule(icon_sidebar, 'icon_sidebar')
   callModule(daterange, 'daterange')
 }
 
