@@ -1,6 +1,5 @@
-[![Build Status](https://travis-ci.org/Niekuba/dashboard.utils.svg?branch=master)](https://travis-ci.org/Niekuba/dashboard.utils)
-
 # dashboard.utils
+[![Build Status](https://travis-ci.org/Niekuba/dashboard.utils.svg?branch=master)](https://travis-ci.org/Niekuba/dashboard.utils)
 
 ## About
 This is my first package created for educational purposes. Containts a shiny app wtih few modules and functionalities.
