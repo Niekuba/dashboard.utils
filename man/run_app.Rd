@@ -13,6 +13,8 @@ shiny app (in a new window/browser)
 Runs a shiny app.
 }
 \examples{
+if(interactive()) {
 run_app()
+}
 
 }

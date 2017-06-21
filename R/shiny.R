@@ -53,7 +53,9 @@ shiny_server <- function(input, output, session) {
 #' @return shiny app (in a new window/browser)
 #'
 #' @examples
+#' if(interactive()) {
 #' run_app()
+#' }
 #'
 #' @export
 run_app <- function() {
