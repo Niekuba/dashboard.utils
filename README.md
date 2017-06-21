@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Niekuba/dashboard.utils.svg?branch=master)](https://travis-ci.org/Niekuba/dashboard.utils)
+
 # dashboard.utils
 
 ## About
