@@ -3,4 +3,6 @@
 #' @import shinyjs
 #' @import lubridate
 #' @import magrittr
+#' @import dplyr
+#' @import DT
 NULL
