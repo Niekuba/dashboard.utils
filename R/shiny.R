@@ -29,6 +29,13 @@ shiny_server <- function(input, output, session) {
   callModule(daterange, 'daterange')
 }
 
+#' Runs a shiny app.
+#'
+#' @return shiny app (in a new window/browser)
+#'
+#' @examples
+#' run_app()
+#'
 #' @export
 run_app <- function() {
   shinyApp(ui = shiny_ui(), server = shiny_server)
