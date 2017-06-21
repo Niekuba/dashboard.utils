@@ -11,7 +11,7 @@ shiny_ui <- function() {
     useShinyjs(),
     tabItems(
       tabItem(tabName = 'dashboard',
-              'Test'
+              dashboard_bodyUI('dashbody')
 
       )
     ))
@@ -26,7 +26,7 @@ shiny_ui <- function() {
 
 shiny_server <- function(input, output, session) {
   callModule(daterange, 'daterange')
-
+  callModule(dashboard_body, 'dashbody')
   runjs({'
     var element = document.querySelector(".skin-blue");
     element.className = "skin-blue sidebar-mini";
