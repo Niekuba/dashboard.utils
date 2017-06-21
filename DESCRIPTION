@@ -6,6 +6,7 @@ Author: person('Jakub', 'Niedzwiecki', 'j.niedzwiecki@gmail.com',
     role = c('aut', 'cre'))
 Maintainer: The package maintainer <j.niedzwiecki@gmail.com>
 Description: Example shiny app with inclusion of hand-made improvements.
+Depends: R (>= 2.10)
 License: MIT
 Encoding: UTF-8
 LazyData: true
