@@ -1,3 +1,4 @@
+
 shiny_ui <- function() {
   sidebar <- dashboardSidebar(sidebarMenu(id = 'tabs',
                                           menuItem(text = 'Dashboard', tabName = 'dashboard', icon = icon('dashboard')
@@ -24,9 +25,27 @@ shiny_ui <- function() {
 
 
 shiny_server <- function(input, output, session) {
-
-  callModule(icon_sidebar, 'icon_sidebar')
   callModule(daterange, 'daterange')
+
+  runjs({'
+    var element = document.querySelector(".skin-blue");
+    element.className = "skin-blue sidebar-mini";
+    var clicker = document.querySelector(".sidebar-toggle");
+    clicker.id = "switchState";
+    '})
+
+  onclick('switchState', runjs({'
+    var container = document.getElementById("tohide");
+    var title = document.querySelector(".logo")
+    if (container.style.visibility == "hidden") {
+    container.style.visibility = "visible";
+    title.style.visibility = "visible";
+    } else {
+    container.style.visibility = "hidden";
+    title.style.visibility = "hidden";
+    }
+    '}))
+
 }
 
 #' Runs a shiny app.
@@ -39,4 +58,7 @@ shiny_server <- function(input, output, session) {
 #' @export
 run_app <- function() {
   shinyApp(ui = shiny_ui(), server = shiny_server)
+
+
+
 }
