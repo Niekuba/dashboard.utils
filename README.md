@@ -9,3 +9,9 @@ Package can be installed using:
 if (!'devtools' %in% installed.packages()) install.packages('devtools')
 devtools::install_github('Niekuba/dashboard.utils')
 ```
+
+##Usage
+You can see the shiny app by simply using:
+```R 
+run_app()
+```
