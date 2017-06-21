@@ -14,6 +14,6 @@ Imports:
   shinydashboard,
   shinyjs,
   lubridate,
-  dplyr
+  magrittr
 Suggests: testthat
 RoxygenNote: 6.0.1

@@ -1,4 +1,4 @@
-icon_sidebar <- function() {
+icon_sidebar <- function(input, output, session) {
 runjs({'
         var element = document.querySelector(".skin-blue");
         element.className = "skin-blue sidebar-mini";
